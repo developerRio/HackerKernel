@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B3B3B3"
+    android:padding="10dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#1A1A1A"
+            android:padding="5dp"
+            android:id="@+id/status_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_below="@+id/status_Text"
+            android:textColor="#1A1A1A"
+            android:padding="5dp"
+            android:id="@+id/file_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="File" />
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_below="@+id/file_Text"
+            android:textColor="#1A1A1A"
+            android:padding="5dp"
+            android:id="@+id/pitch_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pitch" />
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_below="@+id/pitch_Text"
+            android:textColor="#1A1A1A"
+            android:padding="5dp"
+            android:id="@+id/lips_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lips" />
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_below="@+id/lips_Text"
+            android:textColor="#1A1A1A"
+            android:padding="5dp"
+            android:id="@+id/maleConfidence_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MaleConfidence" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
