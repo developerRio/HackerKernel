@@ -38,6 +38,14 @@ public class StateAdapter extends ArrayAdapter<State> {
         return initView(position);
     }
 
+    public void updateDataSet(List<State> items) {
+        if (null != stateList) {
+            stateList.clear();
+            stateList.addAll(items);
+        } else
+            stateList = items;
+        notifyDataSetChanged();
+    }
 
     private View initView(int position) {
         State state = getItem(position);

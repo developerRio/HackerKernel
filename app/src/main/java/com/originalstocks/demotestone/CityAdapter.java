@@ -39,6 +39,17 @@ public class CityAdapter extends ArrayAdapter<City> {
         return initView(position);
     }
 
+
+    public void updateDataSet(List<City> items) {
+        if (null != cityList) {
+            cityList.clear();
+            cityList.addAll(items);
+        } else
+            cityList = items;
+        notifyDataSetChanged();
+    }
+
+
     private View initView(int position) {
         City city = getItem(position);
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
